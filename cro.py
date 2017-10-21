@@ -2,11 +2,8 @@
 
 import os
 source = "/home/saintil/exoPyton"
-#if source == "":
-#   source=os.system("pwd")
-
 dest= "donfredeveloper@gmail.com"
-#while dest == "":
-#   dest = input("Entrer repertoire de destination (user@server:/path/to) :"
 
 os.system("rsync -avz " + source +" "+ dest)
+#the script can be automated using crontab -e
+#adding this following line  " */10 *   *        *    *  /home/saintil/exoPyton/cro.sh"
